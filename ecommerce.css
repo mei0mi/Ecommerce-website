@@ -46,6 +46,13 @@ p {
   height: 4rem;
 }
 
+.navbar-header{
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .top-header {
   display: flex;
   background-color:black;
@@ -56,6 +63,7 @@ p {
   box-shadow: 0 10px 15px rgb(157, 207, 207);
   border-radius: 100px;
 }
+
 
 .nav-logos {
   display: flex;
@@ -102,8 +110,18 @@ h3 {
 .shop-now {
   border: none;
   background-color: rgb(157, 207, 207);
-  color: #222;
+  color: black;
   outline: none;
+  margin: 40px 0;
+  padding: 0.5rem;
+  font-size: larger;
+  border-radius: 40px;
+  width: 10cm;
+}
+
+.shop-now:hover{
+  transform: scale(1.1);
+  background-color: rgb(109, 161, 161);
 }
 
 .front-page .title {
