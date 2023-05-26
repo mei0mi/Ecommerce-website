@@ -9,6 +9,8 @@
 body {
   font-family: 'Playfair Display', serif;
   width: 100%;
+  background-color:black;
+  position: relative;
 }
 
 html {
@@ -16,12 +18,6 @@ html {
 }
   
   /* Global Styles */
-  
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
-}
   
 h2 {
   font-size: 46px;
@@ -46,23 +42,97 @@ p {
 }
 
 .logo-img {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .top-header {
   display: flex;
-  background-color:#202020;
+  background-color:black;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 4mm;
+  box-shadow: 0 10px 15px rgb(157, 207, 207);
+  border-radius: 100px;
 }
 
 .nav-logos {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: red solid 1mm;
-  color: beige;
+  
 }
 
 .nav-logos li {
   list-style: none;
+  padding: 0 20px;
+  position: relative;
 }
+
+.nav-logos li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  transition: 0.4s ease;
+}
+
+.nav-logos li a:hover,
+.nav-logos li a.active  {
+  color: rgb(157, 207, 207);  
+}
+
+.nav-logos li a.active::after,
+.nav-logos li a:hover::after {
+  content: "";
+  width: 40%;
+  height: 3px;
+  background: rgb(157, 207, 207);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* Front Page */
+
+h3 {
+  color: white;
+}
+
+.shop-now {
+  border: none;
+  background-color: rgb(157, 207, 207);
+  color: #222;
+  outline: none;
+}
+
+.front-page .title {
+  color: rgb(157, 207, 207);
+  font-size: 40px;
+  text-shadow: 0 5px 15px rgb(255, 255, 255) ;
+}
+
+.front-page {
+  background-image: url("img/model3.jpg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 30% ;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  padding: 0 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
